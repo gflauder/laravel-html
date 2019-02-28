@@ -103,9 +103,11 @@ class Input extends BaseElement
     /**
      * @return static
      */
-    public function readonly()
+    public function readonly($readonly = true)
     {
-        return $this->attribute('readonly');
+	    return $readonly
+		    ? $this->attribute('readonly')
+		    : $this->forgetAttribute('readonly');
     }
 
     /**
