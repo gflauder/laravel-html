@@ -109,9 +109,7 @@ class Select extends BaseElement
     {
         return $this->attribute('required');
     }
-
-
-
+    
 	public function disabled($disabled = true)
 	{
 
@@ -120,7 +118,6 @@ class Select extends BaseElement
 			: $this->forgetAttribute('disabled');
 		//return $this->attribute('disabled');
 	}
-
 
     /**
      * @param string|iterable $value
