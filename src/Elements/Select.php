@@ -110,6 +110,18 @@ class Select extends BaseElement
         return $this->attribute('required');
     }
 
+
+
+	public function disabled($disabled = true)
+	{
+
+		return $disabled
+			? $this->attribute('disabled')
+			: $this->forgetAttribute('disabled');
+		//return $this->attribute('disabled');
+	}
+
+
     /**
      * @param string|iterable $value
      *
